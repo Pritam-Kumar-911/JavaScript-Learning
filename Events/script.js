@@ -24,6 +24,30 @@ button1.onclick = (e) => {
 
 //the best way to use event handing is event listeners in this way we can do multiple taks with same listeners
 
-button1.addEventListener("click" , () => {
+button1.addEventListener("click" , (evt) => {
     console.log("This button is clicked by event listener!");
+    console.log(evt);
+})
+
+//practice question change screen mode either dark or white
+let modebtn = document.querySelector("#mode");
+let getBody = document.querySelector("body");
+
+let active = "light";
+modebtn.addEventListener("click" , () => {
+    if(active === "light"){
+        console.log("light is dark!");
+        getBody.classList.add("dark");
+        getBody.classList.remove("light");
+        modebtn.innerText = "Switch to light!";
+
+        active = "dark";
+    }
+    else{
+        console.log("light is white!");
+        getBody.classList.add("light");
+        getBody.classList.remove("dark");
+        active = "light";
+        modebtn.innerText = "Switch to dark!";
+    }        
 })
