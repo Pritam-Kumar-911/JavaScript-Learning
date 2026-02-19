@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: pink; */
+    background-color: #FFA47F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5%;
+
+}
+
+.amount-div{
+    /* background-color: red; */
+    padding: 20px;
+}
+#area{
+    width: 250px;
+    height: 30px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    resize: none;
+    border: 0.5px solid;
+}
+
+#container-heading{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.selection-div{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.selector1{
+    width: 90px;
+    /* background-color: blueviolet; */
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.innerbox{
+    /* background-color: blanchedalmond; */
+    background-color: #FAF0E6;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 0.5px solid;
+    border-radius: 5px;
+}
+.image1{
+    height: 30px;
+    width: 30px;
+}
+.select-box{
+    width: 50px;
+    height: 20px;
+    border: none;
+    /* background-color: blanchedalmond; */
+    background-color: #FAF0E6;
+
+}
+select:focus {
+  outline: none; /* Removes the default blue/orange focus ring */
+  /* border: 0;      Ensures no border is present when focused */
+  /* box-shadow: none; Removes any shadow effects, sometimes used in frameworks like Bootstrap */
+}
+.selector-text{
+    font-size: 15px;
+}
+.result{
+    font-size: 15px;
+    /* background-color: chartreuse; */
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.last-box{
+    height: 50px;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .last-box-inner{
+    padding: 10px;
+    background-color: blue;
+} */
+#lastboxtext{
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: white;
+}
+.arrow-icon{
+    font-size: 20px;
+    /* background-color: chartreuse; */
+    padding-top: 37px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
